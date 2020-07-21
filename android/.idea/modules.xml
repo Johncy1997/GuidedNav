@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/914515725/@react-native-community_voice.iml" filepath="$PROJECT_DIR$/.idea/modules/914515725/@react-native-community_voice.iml" group="guidednav/@react-native-community_voice" />
+      <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="guidednav/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guidednav.iml" filepath="$PROJECT_DIR$/.idea/modules/guidednav.iml" group="guidednav" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1656053717/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1656053717/react-native-gesture-handler.iml" group="guidednav/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1651746579/react-native-permissions.iml" filepath="$PROJECT_DIR$/.idea/modules/1651746579/react-native-permissions.iml" group="guidednav/react-native-permissions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-837948121/react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-837948121/react-native-reanimated.iml" group="guidednav/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1463696534/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1463696534/react-native-screens.iml" group="guidednav/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/236728307/react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/236728307/react-native-svg.iml" group="guidednav/react-native-svg" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1381813118/react-native-tts.iml" filepath="$PROJECT_DIR$/.idea/modules/-1381813118/react-native-tts.iml" group="guidednav/react-native-tts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1891423489/react-native-voice.iml" filepath="$PROJECT_DIR$/.idea/modules/1891423489/react-native-voice.iml" group="guidednav/react-native-voice" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-xhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-xhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_entities_lib_maps_decode.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_entities_lib_maps_decode.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-xxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_app.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/app.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_domserializer_foreignnames.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_domserializer_foreignnames.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-xxxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_entities_lib_maps_entities.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_entities_lib_maps_entities.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_guidednav_assets_record.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/guidednav_assets_record.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_cssselect_lib_procedure.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_cssselect_lib_procedure.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_guidednav_assets_images.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/guidednav_assets_images.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_guidednav_assets_drop.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/guidednav_assets_drop.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_entities_lib_maps_xml.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_entities_lib_maps_xml.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_csstree_dist_defaultsyntax.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_csstree_dist_defaultsyntax.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_reactnative_package.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_reactnative_package.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-hdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-hdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnavigation_stack_src_views_assets_backiconmask.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigation_stack_src_views_assets_backiconmask.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/raw_node_modules_entities_lib_maps_legacy.json.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/raw/node_modules_entities_lib_maps_legacy.json"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_guidednav_assets_rightarrow.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/guidednav_assets_rightarrow.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_guidednav_assets_ques.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/guidednav_assets_ques.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/res/merged/release/drawable-mdpi_guidednav_assets_goback.png.flat",
+        "source": "/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/generated/res/react/release/drawable-mdpi/guidednav_assets_goback.png"
+    }
+]
