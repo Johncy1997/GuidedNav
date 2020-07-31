@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="guidednav/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1757472161/guidednav.iml" filepath="$PROJECT_DIR$/.idea/modules/1757472161/guidednav.iml" group="guidednav" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1703169797/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1703169797/react-native-community_async-storage.iml" group="guidednav/react-native-community_async-storage" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1590449342/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1590449342/react-native-community_masked-view.iml" group="guidednav/react-native-community_masked-view" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/914515725/react-native-community_voice.iml" filepath="$PROJECT_DIR$/.idea/modules/914515725/react-native-community_voice.iml" group="guidednav/react-native-community_voice" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1656053717/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1656053717/react-native-gesture-handler.iml" group="guidednav/react-native-gesture-handler" />

@@ -1,7 +1,8 @@
 const RouteNames = {
     Drawer:{
         "menu1":"Tutorial",
-        "menu2":"Permission"
+        "menu2":"Permission",
+        "menu3":"Chat with us"
     },
     HomeStack:{
         "home":"Home",
@@ -13,6 +14,9 @@ const RouteNames = {
     },
     PermissionStack:{
         "psHome":"psHome"
+    },
+    BotStack:{
+        "botHome":"botHome"
     }
 }
 

@@ -10,6 +10,8 @@ import 'react-native-gesture-handler';
 import {
   View
 } from 'react-native';
+import {Provider} from 'react-redux';
+import Store from './guidednav/store';
 import AppContainer from './guidednav/navigators';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -22,11 +24,13 @@ class App extends Component {
     console.disableYellowBox = true;
     console.ignoredYellowBox=true;
     return (
-      <NavigationContainer>
-      <View style={{ flex: 1 }}>
-        <AppContainer ref={nav => (this.primaryNavigator = nav)} />
-      </View>
-      </NavigationContainer>
+      <Provider store={Store}>
+        <NavigationContainer>
+          <View style={{ flex: 1 }}>
+            <AppContainer ref={nav => (this.primaryNavigator = nav)} />
+          </View>
+        </NavigationContainer>
+      </Provider>
     );
   }
 };

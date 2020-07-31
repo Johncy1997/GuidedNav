@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import Tts from 'react-native-tts';
 import Toast from 'react-native-view-toast';
+import AppData from './AppData';
 
 export const windowWidth = Dimensions.get('window').width;
 
@@ -51,3 +52,22 @@ export const heightPercentageToDP = heightPercent => {
     // size (dp) to the nearest one that correspons to an integer number of pixels.
     return PixelRatio.roundToNearestPixel(windowHeight * elemHeight / 100);
 };
+
+
+export function getHeader(type='json'){
+    var language = AppData.getInstance().getLanguage();
+    var header;
+    if(type == 'json'){
+        header = {
+            'Content-Type': 'application/json',
+            'MP_LANG': language
+        };
+    }else if(type == 'multipart'){
+        header = {
+            'Accept': 'application/json',
+            'Content-Type': 'multipart/form-data',
+            'MP_LANG': language
+        }
+    }
+    return header;
+}

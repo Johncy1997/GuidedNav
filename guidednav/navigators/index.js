@@ -9,15 +9,16 @@ import {
 import {
     createDrawerNavigator
 } from '@react-navigation/drawer';
-import HomeManage from '../components/HomeManage';
-import EnterZip from '../components/EnterZip';
+import HomeManage from '../components/guideStack/HomeManage';
+import EnterZip from '../components/guideStack/EnterZip';
 import RouteNames from './RouteNames';
-import Help from '../components/Help';
-import SelectNumber from '../components/SelectNumber';
-import ChooseDate from '../components/ChooseDate';
-import SelectLastDigits from '../components/SelectLastDigits';
+import Help from '../components/guideStack/Help';
+import SelectNumber from '../components/guideStack/SelectNumber';
+import ChooseDate from '../components/guideStack/ChooseDate';
+import SelectLastDigits from '../components/guideStack/SelectLastDigits';
 
 import PsHome from '../components/permissionStack/PsHome';
+import BotHome from '../components/botStack/BotHome';
 
 const Stack = createStackNavigator();
 
@@ -163,6 +164,46 @@ function PermissionStack(){
     )
 }
 
+function BotStack(){
+    return(
+        <Stack.Navigator
+      initialRouteName={RouteNames.BotStack.botHome}
+      headerMode='float'
+      screenOptions= {
+        {headerTitleStyle: [
+          {
+          textAlign:"center", 
+          flex:0.8,
+          fontWeight:'bold'
+        }]}
+      }
+      headerStyle= {
+        {backgroundColor: 'black'}
+    }
+    headerTitleStyle= {
+        {fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',}
+    }
+    headerTintColor= 'white'
+      >
+        <Stack.Screen 
+        name={RouteNames.BotStack.botHome} 
+        component={BotHome} 
+        options={({ navigation }) => ({
+            title: "Chat with us",
+        headerLeft: () => (<TouchableOpacity onPress={() => navigation.openDrawer()} style={{ height: 20, width: 40, marginLeft: 10 }}>
+            <Image source={require('.././assets/images.png')} style={{ height: '100%', width: '100%', resizeMode: 'contain' }} />
+        </TouchableOpacity>),
+        headerRight: ()=>(<TouchableOpacity onPress={() => navigation.navigate(RouteNames.HomeStack.help)} style={{ height: 20, width: 40, marginRight: 10 }}>
+            <Image source={require('.././assets/ques.png')} style={{ height: '100%', width: '100%', resizeMode: 'contain' }} />
+        </TouchableOpacity>)
+        })}
+        />
+        </Stack.Navigator>
+    )
+}
+
 const Drawer = createDrawerNavigator();
 
 const MainMenu = () => {
@@ -185,6 +226,7 @@ drawerContentOptions = {
 >
 <Drawer.Screen name={RouteNames.Drawer.menu1} component={HomeStack} />
 <Drawer.Screen name={RouteNames.Drawer.menu2} component={PermissionStack} />
+<Drawer.Screen name={RouteNames.Drawer.menu3} component={BotStack} />
 </Drawer.Navigator>)}
 
 const AppContainer = MainMenu;
