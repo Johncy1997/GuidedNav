@@ -148,7 +148,7 @@ export default class ChooseDate extends Component {
                 }}
                 disabled={this.state.speechInProgress}
                 style={{ position: 'absolute', bottom: 10, right: 10, }}>
-                    <Image style={{ height: 40, width: 40, resizeMode: 'contain', tintColor: this.state.speechInProgress ? 'blue' : 'black' }} source={require('../assets/record.png')} />
+                    <Image style={{ height: 40, width: 40, resizeMode: 'contain', tintColor: this.state.speechInProgress ? 'blue' : 'black' }} source={require('../../assets/record.png')} />
                 </TouchableOpacity>
             </SafeAreaView>
         )

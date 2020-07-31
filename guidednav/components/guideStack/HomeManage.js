@@ -305,7 +305,7 @@ class HomeManage extends Component {
                                         } : {}]}
                                     >
                                         <Text ref={(ref) => { this[`${item.name}${index}`] = ref; }}>{item.name}</Text>
-                                        <Image style={{ height: 20, width: 20, resizeMode: 'contain' }} source={require('../assets/rightarrow.png')} />
+                                        <Image style={{ height: 20, width: 20, resizeMode: 'contain' }} source={require('../../assets/rightarrow.png')} />
                                     </TouchableOpacity>
                                     // <CopilotStep
                                     //     order={index == this.state.active ? 1 : -1}
@@ -331,7 +331,7 @@ class HomeManage extends Component {
                         disabled={this.state.speechInProgress}
                         style={{ position: 'absolute', bottom: 10, right: 10, }}>
                         <Image style={{ height: 40, width: 40, resizeMode: 'contain', tintColor: this.state.speechInProgress ? 'blue' : 'black' }}
-                            source={require('../assets/record.png')} />
+                            source={require('../../assets/record.png')} />
                     </TouchableOpacity>
                 </View>
             </SafeAreaView >

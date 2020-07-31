@@ -149,7 +149,7 @@ export default class SelectLastDigits extends Component {
                                 fontSize: 16,
                                 color: 'black'
                             }]}
-                            renderAccessory={() => <Image source={require('../assets/drop.png')} style={{ height: '100%', width: 30, resizeMode: 'contain' }} />}
+                            renderAccessory={() => <Image source={require('../../assets/drop.png')} style={{ height: '100%', width: 30, resizeMode: 'contain' }} />}
                             pickerStyle={[{ 
                                 borderBottomColor: 'transparent', 
                             marginLeft: 10, 
@@ -183,7 +183,7 @@ export default class SelectLastDigits extends Component {
                 <TouchableOpacity 
                 disabled={this.state.speechInProgress}
                 style={{ position: 'absolute', bottom: 10, right: 10, }}>
-                    <Image style={{ height: 40, width: 40, resizeMode: 'contain',tintColor: this.state.speechInProgress ? 'blue' : 'black' }} source={require('../assets/record.png')} />
+                    <Image style={{ height: 40, width: 40, resizeMode: 'contain',tintColor: this.state.speechInProgress ? 'blue' : 'black' }} source={require('../../assets/record.png')} />
                 </TouchableOpacity>
             </SafeAreaView>
         )

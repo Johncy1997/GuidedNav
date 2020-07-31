@@ -6,6 +6,7 @@ INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/
 INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:1:1-50:12
 MERGED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:1:1-50:12
 MERGED from [androidx.multidex:multidex:2.0.1] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/ffef9ed1c224809e18ded1efe2c41337/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-community_async-storage] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-16:12
 MERGED from [:react-native-gesture-handler] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -207,6 +208,8 @@ INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/
 INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.1] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/ffef9ed1c224809e18ded1efe2c41337/multidex-2.0.1/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/ffef9ed1c224809e18ded1efe2c41337/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-community_async-storage] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:54
