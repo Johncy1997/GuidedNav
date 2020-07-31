@@ -1,6 +1,8 @@
 package com.guidednav.rnandroidsettings;
 
 import android.bluetooth.BluetoothAdapter;
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -119,20 +121,38 @@ public class AndroidOpenSettings extends ReactContextBaseJavaModule {
         }
     }
 
-
     @ReactMethod
     public void setMobileData(Boolean state) {
-        try {
-            TelephonyManager telephonyService = (TelephonyManager) getReactApplicationContext().getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
-            Method setMobileDataEnabledMethod = Objects.requireNonNull(telephonyService).getClass().getDeclaredMethod("setDataEnabled", boolean.class);
-            setMobileDataEnabledMethod.invoke(telephonyService, state);
-        } catch (Exception ex) {
-            Log.e("MainActivity", "Error setting mobile data state", ex);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            Intent intent = new Intent(Settings.Panel.ACTION_INTERNET_CONNECTIVITY);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            if (intent.resolveActivity(reactContext.getPackageManager()) != null) {
+                reactContext.startActivity(intent);
+            }
+        }else{
+            try {
+                TelephonyManager telephonyService = (TelephonyManager) getReactApplicationContext().getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
+                Method setMobileDataEnabledMethod = Objects.requireNonNull(telephonyService).getClass().getDeclaredMethod("setDataEnabled", boolean.class);
+                setMobileDataEnabledMethod.invoke(telephonyService, state);
+            } catch (Exception ex) {
+                Log.e("MainActivity", "Error setting mobile data state", ex);
+            }
         }
     }
 
     @ReactMethod
     public void wirelessSettings() {
+        Intent intent = new Intent(Settings.ACTION_WIRELESS_SETTINGS);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+        if (intent.resolveActivity(reactContext.getPackageManager()) != null) {
+            reactContext.startActivity(intent);
+        }
+    }
+
+    @ReactMethod
+    public void dataUsageSettings() {
         Intent intent = new Intent(Settings.ACTION_WIRELESS_SETTINGS);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
@@ -189,28 +209,21 @@ public class AndroidOpenSettings extends ReactContextBaseJavaModule {
             Camera cam = Camera.open();
             Parameters p = cam.getParameters();
             String flashMode = p.getFlashMode();
-            CameraManager cameraManager = (CameraManager) getReactApplicationContext().getApplicationContext().getSystemService(Context.CAMERA_SERVICE);
             if(flashMode!= Parameters.FLASH_MODE_TORCH && state){
                 try {
-                    String cameraId = cameraManager.getCameraIdList()[0];
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        cameraManager.setTorchMode(cameraId, true);
-                    }
                     p.setFlashMode(Parameters.FLASH_MODE_TORCH);
                     cam.setParameters(p);
                     cam.startPreview();
-                } catch (CameraAccessException e) {
+                }
+                catch (Exception e) {
                 }
             }else {
                 try {
-                    String cameraId = cameraManager.getCameraIdList()[0];
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        cameraManager.setTorchMode(cameraId, false);
-                    }
                     cam.stopPreview();
                     cam.release();
                     cam = null;
-                } catch (CameraAccessException e) {
+                }
+                catch (Exception e) {
                 }
             }
         }

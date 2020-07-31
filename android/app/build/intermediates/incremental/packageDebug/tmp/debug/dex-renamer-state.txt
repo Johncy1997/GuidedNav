@@ -1,4 +1,4 @@
-#Mon Jul 27 19:11:28 IST 2020
+#Fri Jul 31 12:42:38 IST 2020
 base.0=/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex

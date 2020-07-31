@@ -48,49 +48,58 @@
 25-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:20:5-65
 25-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:20:19-63
 26
-27    <application
-27-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:23:5-41:19
-28        android:name="com.guidednav.MainApplication"
-28-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:24:7-38
-29        android:allowBackup="false"
-29-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:28:7-34
-30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-30-->[androidx.core:core:1.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
-31        android:debuggable="true"
-32        android:icon="@mipmap/ic_launcher"
-32-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:26:7-41
-33        android:label="@string/app_name"
-33-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:25:7-39
-34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:27:7-52
-35        android:theme="@style/AppTheme"
-35-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:29:7-38
-36        android:usesCleartextTraffic="true" >
-36-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/debug/AndroidManifest.xml:7:18-53
-37        <activity
-37-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:30:7-39:18
-38            android:name="com.guidednav.MainActivity"
-38-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:31:9-37
-39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-39-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:33:9-79
-40            android:label="@string/app_name"
-40-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:32:9-41
-41            android:windowSoftInputMode="adjustResize" >
-41-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:34:9-51
-42            <intent-filter>
-42-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:35:9-38:25
-43                <action android:name="android.intent.action.MAIN" />
-43-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:36:13-65
-43-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:36:21-62
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:37:13-73
-45-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:37:23-70
-46            </intent-filter>
-47        </activity>
-48        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-48-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:40:7-84
-48-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:40:17-81
-49    </application>
-50
-51</manifest>
+27    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+27-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:22:5-23:47
+27-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:22:22-70
+28    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+28-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:24:5-25:47
+28-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:24:22-77
+29
+30    <application
+30-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:29:5-48:19
+31        android:name="com.guidednav.MainApplication"
+31-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:30:7-38
+32        android:allowBackup="false"
+32-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:35:7-34
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/ic_launcher"
+35-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:32:7-41
+36        android:label="@string/app_name"
+36-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:31:7-39
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:33:7-52
+38        android:sharedUserId="android.uid.system"
+38-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:34:9-50
+39        android:theme="@style/AppTheme"
+39-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:36:7-38
+40        android:usesCleartextTraffic="true" >
+40-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/debug/AndroidManifest.xml:7:18-53
+41        <activity
+41-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:37:7-46:18
+42            android:name="com.guidednav.MainActivity"
+42-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:38:9-37
+43            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+43-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:40:9-79
+44            android:label="@string/app_name"
+44-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:39:9-41
+45            android:windowSoftInputMode="adjustResize" >
+45-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:41:9-51
+46            <intent-filter>
+46-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:42:9-45:25
+47                <action android:name="android.intent.action.MAIN" />
+47-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:43:13-65
+47-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:43:21-62
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:44:13-73
+49-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:44:23-70
+50            </intent-filter>
+51        </activity>
+52        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+52-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:47:7-84
+52-->/media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:47:17-81
+53    </application>
+54
+55</manifest>

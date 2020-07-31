@@ -53,6 +53,8 @@ const setBluetooth = (flag) => RNAndroidOpenSettings.setBluetooth(flag)
 
 const setFlashLight = (flag) => RNAndroidOpenSettings.setFlashLight(flag)
 
+const dataUsageSettings = () => RNAndroidOpenSettings.dataUsageSettings()
+
 module.exports = {
   generalSettings,
   homeSettings,
@@ -78,5 +80,6 @@ module.exports = {
   setWifiState,
   setMobileData,
   setBluetooth,
-  setFlashLight
+  setFlashLight,
+  dataUsageSettings
 }

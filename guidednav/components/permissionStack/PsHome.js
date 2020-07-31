@@ -20,32 +20,114 @@ const ANDROIDPERMISSIONS = [
     {
         name: "Mobile Data",
         enable:true,
-        open:true
+        open:true,
+        enableAction: () => {
+            AndroidSettings.setMobileData(false);
+        },
+        openAction: () => {
+            AndroidSettings.mobileDataSettings();
+        }
     },
     {
         name: "Wifi",
         enable:true,
-        open:true
+        open:true,
+        enableAction: () => {
+            AndroidSettings.setWifiState(true);
+        },
+        openAction: () => {
+            AndroidSettings.wifiSettings();
+        }
     },
     {
         name: "Bluetooth",
         enable:true,
-        open:true
+        open:true,
+        enableAction: () => {
+            AndroidSettings.setBluetooth(true);
+        },
+        openAction: () => {
+            AndroidSettings.bluetoothSettings();
+        }
     },
     {
         name: "Airplane Mode",
         enable:false,
-        open:true
+        open:true,
+        enableAction: () => {
+            
+        },
+        openAction: () => {
+            AndroidSettings.airplaneModeSettings();
+        }
     },
     {
         name: "Location",
         enable:false,
-        open:true
+        open:true,
+        enableAction: () => {
+
+        },
+        openAction: () => {
+            AndroidSettings.locationSourceSettings();
+        }
     },
     {
         name: "FlashLight",
         enable:true,
-        open:false
+        open:false,
+        enableAction: () => {
+            AndroidSettings.setFlashLight(true);
+        },
+        openAction: () => {
+            
+        }
+    },
+    {
+        name: "Data Usage",
+        enable:false,
+        open:true,
+        enableAction: () => {
+
+        },
+        openAction: () => {
+            AndroidSettings.dataUsageSettings();
+        }
+    },
+    {
+        name: "Make a call",
+        enable:false,
+        open:true,
+        enableAction: () => {
+
+        },
+        openAction: () => {
+            var url = "";
+            if (Platform.OS !== 'android') {
+                url = `telprompt:${+91-978843634}`;
+                }
+            else  {
+                url = `tel:${+91-9788436349}`;
+            }
+            Linking.canOpenURL(url).then(supported => {
+                if (!supported) {
+                    Alert.alert('Not supported');
+                  } else {
+                    return Linking.openURL(url);
+                }
+            });
+        }
+    },
+    {
+        name: "Data Roaming",
+        enable:false,
+        open:true,
+        enableAction: () => {
+
+        },
+        openAction: () => {
+            AndroidSettings.mobileDataSettings();
+        }
     }
 ]
 
@@ -55,57 +137,13 @@ export default class PsHome extends Component{
         super(props);
     }
 
-    setOptions(optionSelected){
-        switch(optionSelected){
-            case 0: 
-                AndroidSettings.setMobileData(true);
-                break;
-            case 1: 
-                AndroidSettings.setWifiState(true);
-                break;
-            case 2: 
-                AndroidSettings.setBluetooth(true);
-                break;
-            case 3:
-                AndroidSettings.airplaneModeSettings();
-                break;
-            case 4:
-                AndroidSettings.locationSourceSettings();
-                break;
-            case 5:
-                AndroidSettings.setFlashLight(true);
-                break;
-        }
-    }
-
-    openSettings(optionSelected){
-        switch(optionSelected){
-            case 0: 
-                AndroidSettings.mobileDataSettings();
-                break;
-            case 1: 
-                AndroidSettings.wifiSettings();
-                break;
-            case 2: 
-                AndroidSettings.bluetoothSettings();
-                break;
-            case 3:
-                AndroidSettings.airplaneModeSettings();
-                break;
-            case 4:
-                AndroidSettings.locationSourceSettings();
-                break;
-        }
-    }
-
     alertUser(item,index){
         const btn = [];
         if(item.enable){
             btn.push({
                 text: "Enable",
                 onPress: () =>{
-                    showToaster("Programmatically set");
-                    this.setOptions(index)
+                    item.enableAction();
                 }
             });
         }
@@ -113,8 +151,7 @@ export default class PsHome extends Component{
             btn.push({
                 text: "Open",
                 onPress: () => {
-                    showToaster("Manually set");
-                    this.openSettings(index);
+                    item.openAction()
                 }
             });
         }
