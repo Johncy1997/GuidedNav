@@ -231,6 +231,11 @@ com/google/android/material/tabs/TabLayout$TabGravity.class
 com/google/android/material/tabs/TabLayout$TabIndicatorGravity.class
 com/google/android/material/textfield/TextInputLayout$BoxBackgroundMode.class
 com/google/android/material/textfield/TextInputLayout$EndIconMode.class
+com/google/gson/annotations/Expose.class
+com/google/gson/annotations/JsonAdapter.class
+com/google/gson/annotations/SerializedName.class
+com/google/gson/annotations/Since.class
+com/google/gson/annotations/Until.class
 com/guidednav/BuildConfig.class
 com/guidednav/MainApplication$1.class
 com/guidednav/MainApplication.class

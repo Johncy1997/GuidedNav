@@ -9,6 +9,7 @@ MERGED from [androidx.multidex:multidex:2.0.1] /home/johncyarula/.gradle/caches/
 MERGED from [:react-native-community_async-storage] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-16:12
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-gesture-handler] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-permissions] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-reanimated] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -54,6 +55,7 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/johncyarula/.gradle/cac
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/c6f1e76c078a7e4f5288325854cab247/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/336e4d7f5d818582899034e03216341f/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/e737982ea91fdf7ea321d344c75db0be/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [ai.api:sdk:2.0.7] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/b4e1f478be06febec34c810c4f99d3e0/jetified-sdk-2.0.7/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/e81d34d0d5260219fbdabd3419b30189/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -79,12 +81,16 @@ uses-permission#android.permission.INTERNET
 ADDED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-67
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-67
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
 	android:name
 		ADDED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:7:5-71
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-71
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-71
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-71
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-71
 	android:name
 		ADDED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:7:22-68
 uses-permission#android.permission.ACCESS_WIFI_STATE
@@ -149,6 +155,8 @@ MERGED from [androidx.core:core:1.1.0] /home/johncyarula/.gradle/caches/transfor
 MERGED from [androidx.core:core:1.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/76f2b6439d16df60df3177021482ee5a/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/67aa86ef8808cac41aa5afe6d271f3ea/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/67aa86ef8808cac41aa5afe6d271f3ea/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [ai.api:sdk:2.0.7] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/b4e1f478be06febec34c810c4f99d3e0/jetified-sdk-2.0.7/AndroidManifest.xml:11:5-20
+MERGED from [ai.api:sdk:2.0.7] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/b4e1f478be06febec34c810c4f99d3e0/jetified-sdk-2.0.7/AndroidManifest.xml:11:5-20
 	android:sharedUserId
 		ADDED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:34:9-50
 		ADDED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/main/AndroidManifest.xml:34:9-50
@@ -214,6 +222,8 @@ MERGED from [:react-native-community_masked-view] /media/johncyarula/28F47525F47
 MERGED from [:react-native-community_masked-view] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:54
 MERGED from [:react-native-community_voice] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:54
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-dialogflow] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-dialogflow/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-permissions] /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -304,6 +314,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/johncyarula
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/336e4d7f5d818582899034e03216341f/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/e737982ea91fdf7ea321d344c75db0be/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/e737982ea91fdf7ea321d344c75db0be/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [ai.api:sdk:2.0.7] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/b4e1f478be06febec34c810c4f99d3e0/jetified-sdk-2.0.7/AndroidManifest.xml:7:5-9:41
+MERGED from [ai.api:sdk:2.0.7] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/b4e1f478be06febec34c810c4f99d3e0/jetified-sdk-2.0.7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/e81d34d0d5260219fbdabd3419b30189/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johncyarula/.gradle/caches/transforms-2/files-2.1/e81d34d0d5260219fbdabd3419b30189/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /media/johncyarula/28F47525F474F682/myworkspace/GuidedNav/android/app/src/debug/AndroidManifest.xml

@@ -93,6 +93,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="aidialog_background">#ffffffff</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -155,6 +156,8 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="icon_orange_color">#f26c29</color>
+    <color name="main_bg_color">#FF2a91be</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -167,6 +170,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+    <color name="mic_button_halo">#20000000</color>
     <color name="mtrl_btn_text_color_disabled">#61000000</color>
     <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
     <color name="mtrl_scrim_color">#52000000</color>
@@ -354,6 +358,9 @@
     <item format="float" name="material_emphasis_medium" type="dimen">0.6</item>
     <dimen name="material_text_view_test_line_height">200px</dimen>
     <dimen name="material_text_view_test_line_height_override">100px</dimen>
+    <dimen name="mic_button_halo_radius_max">76dp</dimen>
+    <dimen name="mic_button_halo_radius_min">35dp</dimen>
+    <dimen name="mic_button_size">152dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_bottom">80dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_end">24dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_start">24dp</dimen>
@@ -703,6 +710,7 @@
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="combobox_description" translatable="false">Combo Box</string>
+    <string name="default_aidialog_title">Speak</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
@@ -790,6 +798,30 @@
     <item name="android:windowEnterAnimation">@anim/mtrl_bottom_sheet_slide_in</item>
     <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
   </style>
+    <style name="ApiAi"/>
+    <style name="ApiAi.FullScreenDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="ApiAi.Microphone">
+	    <item name="mainColor">@color/mic_colors</item>
+	    <item name="maxRadius">@dimen/mic_button_halo_radius_max</item>
+	    <item name="minRadius">@dimen/mic_button_halo_radius_min</item>
+	    <item name="centerColor">@color/icon_orange_color</item>
+	    <item name="haloColor">@color/mic_button_halo</item>
+	    <item name="android:src">@drawable/mic_control</item>
+	    <item name="android:paddingTop">0dp</item>
+	    <item name="android:paddingBottom">0dp</item>
+	    <item name="android:paddingLeft">0dp</item>
+	    <item name="android:paddingRight">0dp</item>
+	    <item name="android:layout_margin">0dp</item>
+	    <item name="android:layout_width">@dimen/mic_button_size</item>
+	    <item name="android:layout_height">@dimen/mic_button_size</item>
+	    <item name="android:scaleType">centerInside</item>
+	</style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:textColor">#000000</item>
@@ -6089,6 +6121,7 @@
         <!-- Amount of pixels by which the drop down should be offset horizontally. -->
         <attr name="android:dropDownHorizontalOffset"/>
     </declare-styleable>
+    <declare-styleable name="MaskedColorView"><attr format="color|reference" name="mainColor"/></declare-styleable>
     <declare-styleable name="MaterialAlertDialog">
     <attr format="dimension" name="backgroundInsetStart"/>
     <attr format="dimension" name="backgroundInsetTop"/>
@@ -6725,6 +6758,7 @@
          the theme color used for Snackbar text buttons (e.g., colorPrimary). -->
     <attr format="float" name="actionTextColorAlpha"/>
   </declare-styleable>
+    <declare-styleable name="SoundLevelButton"><attr format="dimension" name="minRadius"/><attr format="dimension" name="maxRadius"/><attr format="dimension" name="circleCenterX"/><attr format="dimension" name="circleCenterY"/><attr format="color" name="centerColor"/><attr format="color" name="haloColor"/><attr format="boolean" name="state_listening"/><attr format="boolean" name="state_waiting"/><attr format="boolean" name="state_speaking"/><attr format="boolean" name="state_initializing_tts"/></declare-styleable>
     <declare-styleable name="Spinner">
         <!-- The prompt to display when the spinner's dialog is shown. -->
         <attr name="android:prompt"/>

@@ -41,7 +41,9 @@ const messageReducer = (state=DEF_MESSAGE_STATE,action) => {
                 }
             }else{
                 return{
-                    ...state
+                    ...state,
+                    loading: false,
+                    responses: [...state.responses, ...action.message]
                 }
             }
             

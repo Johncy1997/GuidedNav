@@ -20,6 +20,8 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // @react-native-community/voice
 import com.wenkesj.voice.VoicePackage;
+// react-native-dialogflow
+import de.innfactory.apiai.RNApiAiPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-permissions
@@ -82,6 +84,7 @@ public class PackageList {
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
       new VoicePackage(),
+      new RNApiAiPackage(),
       new RNGestureHandlerPackage(),
       new RNPermissionsPackage(),
       new ReanimatedPackage(),

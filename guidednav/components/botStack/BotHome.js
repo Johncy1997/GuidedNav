@@ -8,9 +8,11 @@ import {
     StyleSheet
 } from 'react-native';
 import { connect } from "react-redux";
-import {GiftedChat,Bubble} from 'react-native-gifted-chat'
+import {GiftedChat,Bubble} from 'react-native-gifted-chat';
+import { Dialogflow_V2 } from 'react-native-dialogflow';
 import { addMessage } from '../../actions/messageActions';
 import CONSTANTS from '../../utils/Constants';
+import { dialogFlowConfig } from '../../utils/dialogFlowConfig';
 
 class BotHome extends Component{
 
@@ -25,7 +27,42 @@ class BotHome extends Component{
         this.onUserSendMessage = this.onUserSendMessage.bind(this);
     }
 
+    componentDidMount(){
+        Dialogflow_V2.setConfiguration(
+            dialogFlowConfig.client_email,
+            dialogFlowConfig.private_key,
+            Dialogflow_V2.LANG_ENGLISH_US,
+            dialogFlowConfig.project_id
+          );
+    }
+
+    handleGoogleResponse(result) {
+        let text = result.queryResult.fulfillmentMessages[0].text.text[0];
+        this.sendBotResponse(text);
+    }
+    
+    sendBotResponse(text) {
+        let msg = {
+          _id: this.props.msgs.responses.length + 1,
+          text,
+          createdAt: new Date(),
+          user: {
+              _id: this.state.bot
+          }
+        };
+        this.props.addMessage([msg],CONSTANTS.BOT_MSG_TYPE);
+    }
+    
+    hitDialogFlow(message){
+        Dialogflow_V2.requestQuery(
+            message,
+            result => this.handleGoogleResponse(result),
+            error => console.log(error)
+          );
+    }
+
     onUserSendMessage(messages){
+        this.hitDialogFlow(messages[0].text);
         this.props.addMessage(messages,CONSTANTS.USER_MSG_TYPE);
     }
 
@@ -72,7 +109,6 @@ class BotHome extends Component{
             <SafeAreaView style={{flex:1}}>
                 <GiftedChat
                     renderAvatar={(props)=>{
-                        console.log(props);
                         if(props.currentMessage.user._id === this.state.mdn){
                             return(<Image
                             source={require('../../assets/user.png')}

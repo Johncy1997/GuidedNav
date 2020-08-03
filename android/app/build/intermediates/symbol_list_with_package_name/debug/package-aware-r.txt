@@ -176,6 +176,7 @@ attr cardMaxElevation
 attr cardPreventCornerOverlap
 attr cardUseCompatPadding
 attr cardViewStyle
+attr centerColor
 attr checkboxStyle
 attr checkedButton
 attr checkedChip
@@ -204,6 +205,8 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr circleCenterX
+attr circleCenterY
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -360,6 +363,7 @@ attr fontWeight
 attr foregroundInsidePadding
 attr gapBetweenBars
 attr goIcon
+attr haloColor
 attr headerLayout
 attr height
 attr helperText
@@ -451,6 +455,7 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr mainColor
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -475,8 +480,10 @@ attr maxActionInlineWidth
 attr maxButtonHeight
 attr maxCharacterCount
 attr maxImageSize
+attr maxRadius
 attr measureWithLargestChild
 attr menu
+attr minRadius
 attr minTouchTargetSize
 attr multiChoiceItemLayout
 attr navigationContentDescription
@@ -580,8 +587,12 @@ attr state_above_anchor
 attr state_collapsed
 attr state_collapsible
 attr state_dragged
+attr state_initializing_tts
 attr state_liftable
 attr state_lifted
+attr state_listening
+attr state_speaking
+attr state_waiting
 attr statusBarBackground
 attr statusBarForeground
 attr statusBarScrim
@@ -734,6 +745,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color aidialog_background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -800,6 +812,8 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color icon_orange_color
+color main_bg_color
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -821,6 +835,8 @@ color material_on_primary_emphasis_medium
 color material_on_surface_disabled
 color material_on_surface_emphasis_high_type
 color material_on_surface_emphasis_medium
+color mic_button_halo
+color mic_colors
 color mtrl_bottom_nav_colored_item_tint
 color mtrl_bottom_nav_colored_ripple_color
 color mtrl_bottom_nav_item_tint
@@ -1056,6 +1072,9 @@ dimen material_emphasis_high_type
 dimen material_emphasis_medium
 dimen material_text_view_test_line_height
 dimen material_text_view_test_line_height_override
+dimen mic_button_halo_radius_max
+dimen mic_button_halo_radius_min
+dimen mic_button_size
 dimen mtrl_alert_dialog_background_inset_bottom
 dimen mtrl_alert_dialog_background_inset_end
 dimen mtrl_alert_dialog_background_inset_start
@@ -1321,6 +1340,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cube
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1338,6 +1358,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable mic_control
+drawable microphone_control
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1361,6 +1383,8 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
+drawable speaker
+drawable speaker_silent
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1523,6 +1547,8 @@ id listMode
 id list_item
 id masked
 id message
+id micButton
+id micContainer
 id middle
 id mini
 id month_grid
@@ -1566,6 +1592,7 @@ id outline
 id parallax
 id parentPanel
 id parent_matrix
+id partialResultsTextView
 id password_toggle
 id peekHeight
 id pin
@@ -1652,6 +1679,7 @@ id textinput_helper_text
 id time
 id title
 id titleDividerNoCustom
+id titleTextView
 id title_template
 id top
 id topPanel
@@ -1735,6 +1763,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout aidialog
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1809,6 +1838,7 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw version_config
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1874,6 +1904,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string combobox_description
+string default_aidialog_title
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -1952,6 +1983,9 @@ style Animation_AppCompat_Tooltip
 style Animation_Catalyst_RedBox
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style ApiAi
+style ApiAi_FullScreenDialog
+style ApiAi_Microphone
 style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
@@ -2684,6 +2718,7 @@ styleable GradientColorItem android_color android_offset
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable MaskedColorView mainColor
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom android_checkable backgroundTint backgroundTintMode cornerRadius elevation icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
@@ -2711,6 +2746,7 @@ styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottom
 styleable SimpleDraweeView actualImageResource actualImageScaleType actualImageUri backgroundImage fadeDuration failureImage failureImageScaleType overlayImage placeholderImage placeholderImageScaleType pressedStateOverlayImage progressBarAutoRotateInterval progressBarImage progressBarImageScaleType retryImage retryImageScaleType roundAsCircle roundBottomEnd roundBottomLeft roundBottomRight roundBottomStart roundTopEnd roundTopLeft roundTopRight roundTopStart roundWithOverlayColor roundedCornerRadius roundingBorderColor roundingBorderPadding roundingBorderWidth viewAspectRatio
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha elevation maxActionInlineWidth
+styleable SoundLevelButton centerColor circleCenterX circleCenterY haloColor maxRadius minRadius state_initializing_tts state_listening state_speaking state_waiting
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable
