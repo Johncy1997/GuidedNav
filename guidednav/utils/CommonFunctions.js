@@ -1,10 +1,14 @@
 import {
     PixelRatio,
-    Dimensions
+    Dimensions,
+    Platform,
+    Linking,
+    Alert
 } from 'react-native';
 import Tts from 'react-native-tts';
 import Toast from 'react-native-view-toast';
 import AppData from './AppData';
+import AndroidSettings from '../components/permissionStack/rnAndroidModule';
 
 export const windowWidth = Dimensions.get('window').width;
 
@@ -70,4 +74,51 @@ export function getHeader(type='json'){
         }
     }
     return header;
+}
+
+export function handleWithOS(nav_tag){
+    switch(nav_tag){
+        case 'wifi':
+            AndroidSettings.wifiSettings();
+            break;
+        case 'make_a_call':
+            var url = "";
+            if (Platform.OS !== 'android') {
+                url = `telprompt:${+91-978843634}`;
+                }
+            else  {
+                url = `tel:${+91-9788436349}`;
+            }
+            Linking.canOpenURL(url).then(supported => {
+                if (!supported) {
+                    Alert.alert('Not supported');
+                  } else {
+                    return Linking.openURL(url);
+                }
+            });
+            break;
+        case 'data_usage':
+            AndroidSettings.dataUsageSettings();
+            break;
+        case 'flash_light':
+            AndroidSettings.setFlashLight(true);
+            break;
+        case 'location':
+            AndroidSettings.locationSourceSettings();
+            break;
+        case 'airplane_mode':
+            AndroidSettings.airplaneModeSettings();
+            break;
+        case 'bluetooth':
+            AndroidSettings.bluetoothSettings();
+            break;
+        case 'data_roaming':
+            AndroidSettings.mobileDataSettings();
+            break;
+        case 'mobile_data':
+            AndroidSettings.mobileDataSettings();
+            break;
+        default:
+            break;
+    }
 }

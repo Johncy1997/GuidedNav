@@ -167,38 +167,30 @@ function PermissionStack(){
 function BotStack(){
     return(
         <Stack.Navigator
-      initialRouteName={RouteNames.BotStack.botHome}
-      headerMode='float'
-      screenOptions= {
-        {headerTitleStyle: [
-          {
-          textAlign:"center", 
-          flex:0.8,
-          fontWeight:'bold'
-        }]}
-      }
-      headerStyle= {
-        {backgroundColor: 'black'}
-    }
-    headerTitleStyle= {
-        {fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',}
-    }
-    headerTintColor= 'white'
+            initialRouteName={RouteNames.BotStack.botHome}
+            headerMode='float'
+            headerStyle= {
+                {
+                    backgroundColor: 'black'
+                }
+            }
+            headerTitleStyle= {
+                {
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                }
+            }
+            headerTintColor= 'white'
       >
         <Stack.Screen 
-        name={RouteNames.BotStack.botHome} 
-        component={BotHome} 
-        options={({ navigation }) => ({
-            title: "Chat with us",
-        headerLeft: () => (<TouchableOpacity onPress={() => navigation.openDrawer()} style={{ height: 20, width: 40, marginLeft: 10 }}>
-            <Image source={require('.././assets/images.png')} style={{ height: '100%', width: '100%', resizeMode: 'contain' }} />
-        </TouchableOpacity>),
-        headerRight: ()=>(<TouchableOpacity onPress={() => navigation.navigate(RouteNames.HomeStack.help)} style={{ height: 20, width: 40, marginRight: 10 }}>
-            <Image source={require('.././assets/ques.png')} style={{ height: '100%', width: '100%', resizeMode: 'contain' }} />
-        </TouchableOpacity>)
-        })}
+            name={RouteNames.BotStack.botHome} 
+            component={BotHome} 
+            options={({ navigation }) => ({
+                title: "Chat with us",
+                headerLeft: () => (<TouchableOpacity onPress={() => navigation.openDrawer()} style={{ height: 20, width: 40, marginLeft: 10 }}>
+                        <Image source={require('.././assets/images.png')} style={{ height: '100%', width: '100%', resizeMode: 'contain' }} />
+                    </TouchableOpacity>)
+            })}
         />
         </Stack.Navigator>
     )
