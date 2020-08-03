@@ -208,26 +208,27 @@ const Drawer = createDrawerNavigator();
 
 const MainMenu = () => {
     return(<Drawer.Navigator 
-initialRouteName={RouteNames.Drawer.menu2} 
-drawerPosition="left"
-drawerType='slide'
-drawerWidth={250}
-drawerContentOptions = {
-    {
-        activeTintColor: 'red',
-        itemsContainerStyle: {
-          marginVertical: 0,
-        },
-        iconContainerStyle: {
-          opacity: 1
-        }
-      }
-}
->
-<Drawer.Screen name={RouteNames.Drawer.menu1} component={HomeStack} />
-<Drawer.Screen name={RouteNames.Drawer.menu2} component={PermissionStack} />
-<Drawer.Screen name={RouteNames.Drawer.menu3} component={BotStack} />
-</Drawer.Navigator>)}
+                initialRouteName={RouteNames.Drawer.menu3} 
+                drawerPosition="left"
+                drawerType='slide'
+                drawerWidth={250}
+                drawerContentOptions = {
+                    {
+                        activeTintColor: 'red',
+                        itemsContainerStyle: {
+                        marginVertical: 0,
+                        },
+                        iconContainerStyle: {
+                        opacity: 1
+                        }
+                    }
+                }>   
+                    <Drawer.Screen name={RouteNames.Drawer.menu1} component={HomeStack} />
+                    <Drawer.Screen name={RouteNames.Drawer.menu2} component={PermissionStack} />
+                    <Drawer.Screen name={RouteNames.Drawer.menu3} component={BotStack} />
+                </Drawer.Navigator>
+            )
+    }
 
 const AppContainer = MainMenu;
 
